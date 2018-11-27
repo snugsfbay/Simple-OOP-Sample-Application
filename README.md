@@ -11,9 +11,12 @@ Concepts to look for:
 * constructor methods
 * super simple test method that does some super simple testing, needs more
 * custom exception class for required fields to demo throwing and catching custom messages
-* really crappy comments because this was just an exercise to help out some learners
+* naming conventions, none, sorry
+* architecture choices driven by creating the fewest files for easy reading without a lot of skipping around
+* really crappy comments because this was just an exercise to help out learners and they love to read code and add comments as practice
 
 ### To install:
 
 Download from GitHub, unzip the downloaded file and upload via Workbench or via SFDX. Or Ant. 
 [Or, use this link for the unmanaged package.](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5A000001zy7n)
+But, remember, this code is not meant for real use in any environment, it's just sample code. No warranties. 
