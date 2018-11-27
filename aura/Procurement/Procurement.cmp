@@ -1,0 +1,34 @@
+<aura:component controller="ProcurementItem" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="results" type="ProcurementItem.CreateItemResult" />
+    <aura:attribute name="resultMessage" type="String"  />
+    <aura:attribute name="referenceID" type="String"  />
+    <aura:attribute name="price" type="Decimal" default="4.75"/>
+    <aura:attribute name="name" type="String" default="Lightning Test" />
+    <aura:attribute name="description" type="String"  />
+    <aura:attribute name="minimumStock" type="Integer"  />
+    
+    
+    <h2>New Procurement Item </h2>
+    <ul>
+    	<lightning:input name="itemName" value="{!v.name}" label="Name: "/>
+        <lightning:input type="Number" name="listPrice" value="{!v.price}" label="List Price: " step="0.01" formatter="currency" />
+        <lightning:input name="description" value="{!v.description}" label="Description: " />
+        <lightning:input type="Number" name="minStock" value="{!v.minimumStock}" label="Minimum on hand: "  />
+
+    </ul>
+
+    <lightning:button label="Create Item" onclick="{!c.doCreate}" />
+
+    
+    <aura:if isTrue="{!(v.results != null)}">
+        <lightning:card >
+            <aura:set attribute="title">Results</aura:set>
+            <div class="slds-m-left_x-small">
+                <p>Message: {!v.results.message}</p>
+                <b>Reference Number: {!v.results.referenceID}</b>
+            </div>
+        </lightning:card>
+    </aura:if>
+    
+    
+</aura:component>

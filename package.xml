@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOOPSA</fullName>
+    <description>Simple OOP Sample Application to demonstrate OOP concepts to my RAD2 learners</description>
+    <types>
+        <members>ProcurementItem</members>
+        <members>ProcurementItemTest</members>
+        <members>StockItemHandler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CompletedStockItemTrigger</members>
+        <members>StockItemTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Procurement</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Stock_Item__c.Description__c</members>
+        <members>Stock_Item__c.Item_Name__c</members>
+        <members>Stock_Item__c.Item_Stock_is_Low__c</members>
+        <members>Stock_Item__c.List_Price__c</members>
+        <members>Stock_Item__c.Minimum_Stock_Level__c</members>
+        <members>Stock_Item__c.Stock_on_Hand__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Stock_Item__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Home_Page_Default1</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Procurement-1</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Stock_Item__c-Stock Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Stock_Item__c.All</members>
+        <name>ListView</name>
+    </types>
+    <version>43.0</version>
+</Package>
