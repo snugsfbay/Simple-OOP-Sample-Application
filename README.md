@@ -9,10 +9,11 @@ Concepts to look for:
 * encapsulation -- how does it differ between the code for the Flow UI and the code for the Lightning Component UI?
 * wrapper class thrown in for fun, can you find it?
 * constructor methods
-* super simple test method that does some super simple testing, needs more
+* super simple test class that does some super simple testing, needs more, always needs more
 * custom exception class for required fields to demo throwing and catching custom messages
 * naming conventions, none, sorry
 * architecture choices driven by creating the fewest files for easy reading without a lot of skipping around
+* refactor this code for fun and let me know how you made it better
 * really crappy comments because this was just an exercise to help out learners and they love to read code and add comments as practice
 
 ### To install:
